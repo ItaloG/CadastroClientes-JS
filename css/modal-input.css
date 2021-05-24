@@ -1,0 +1,21 @@
+.input-field {
+    width: calc(50% - 10px);
+    height: 40px;
+    padding: 0 14px;
+    font-size: 16px;
+    border-radius: 3px;
+    border-style: none;
+    outline-style: none;
+    border: 1px solid #DDDDDD
+}
+
+.input-field:focus {
+    border: 2px solid #1fb6ff;
+}
+
+
+@media(max-width:480px){
+    .input-field{
+        width: 100%;
+    }
+}

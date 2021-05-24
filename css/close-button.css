@@ -1,0 +1,14 @@
+.close-button {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: lightslategray;
+}
+
+.close-button:hover{
+    background-color: #ff4949;
+    cursor: pointer;
+    color: white;
+    border-radius: 0 5px 0 0;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/tabela.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/modal-content.css">
+    <link rel="stylesheet" href="css/modal-header.css">
+    <link rel="stylesheet" href="css/close-button.css">
+    <link rel="stylesheet" href="css/modal-form.css">
+    <link rel="stylesheet" href="css/modal-input.css">
+    <link rel="stylesheet" href="css/modal-footer.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <h1>Clientes - LionWeb</h1>
+    </header>
+    <main>
+        <button value="Cadastrar Cliente" class="button green" id="cadastrarCliente">Cadastrar Cliente</button>
+        <table class="table" id="tabelaClientes">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td> -->
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <H1 id="tituloModal">Novo Cliente</H1>
+                    <span class="close-button" id="close">&#10006;</span>
+                </header>
+               
+                <form class="form">
+                    <input class="input-field" type="text" id="nome" data-index="" placeholder="Nome" required/>
+                    <input class="input-field" type="email" id="email" placeholder="E-mail" required/>
+                    <input class="input-field" type="text" id="celular" pattern="\(?\d{2}\) ?9?\d{4}-?\d{4}" placeholder="Celular" maxlength="14"/>
+                    <input class="input-field" type="text" id="cidade" placeholder="Cidade" required/>
+                </form>
+                
+                <footer class="modal-footer">
+                    <button type="submit" class="button green" id="salvar">Salvar</button>
+                    <button type="button" class="button blue" id="cancelar">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <small>Copyright &copy; Prof. Fernando Leonid</small>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

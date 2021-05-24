@@ -1,0 +1,28 @@
+.button{
+    border-style: none;
+    padding: 0 20px;
+    min-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.button.red {
+    background-color: #ff4949;
+}
+
+.button.blue {
+    background-color: #1fb6ff
+}
+
+.button.green {
+    background-color: #13CE66
+}
+
+.button.dark {
+    background-color: #343a40
+}
+.button.orange {
+    background-color: orange;
+}

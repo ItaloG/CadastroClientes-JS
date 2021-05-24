@@ -1,0 +1,17 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000090;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: -10;
+    opacity: 0;
+    user-select: none;
+    transition: all .3s;
+}
+
+.modal.active{
+    z-index: 5000;
+    opacity: 1;
+}

@@ -1,0 +1,15 @@
+.header {
+    height: 100px;
+    background-color: #343a40;
+    color: whitesmoke;
+    font-size: 24px;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 5px 0 black;
+}
+
+@media (max-width:480px){
+    .header{
+        font-size: 16px;
+    }
+}
